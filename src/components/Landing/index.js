@@ -1,21 +1,25 @@
-import Header from '../Header';
-import SearchBox from '../SearchBox';
-import { Container } from './styles';
-import Recipes from '../Recipes';
+import { Container, SearchBox } from './styles';
+
+import Illustration from '../../assets/images/art/Illustration.svg';
+import lupe from '../../assets/icons/lupe.svg';
 
 export default function Landing() {
   return (
-    <>
-      <Header />
-      <Container>
-        <div>
-          <SearchBox />
-        </div>
-      </Container>
+    <Container>
+      <img src={Illustration} alt="Landing" id="img1" />
 
-      <Recipes>
-        <div />
-      </Recipes>
-    </>
+      <SearchBox>
+        <div className="title">
+          <h1>Ready for Trying a new recipe?</h1>
+
+          <div className="search">
+            <input type="text" placeholder="Search healthy recipes" />
+            <button type="button">
+              <img src={lupe} alt="Search" />
+            </button>
+          </div>
+        </div>
+      </SearchBox>
+    </Container>
   );
 }

@@ -1,36 +1,21 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  margin-top: 1.5rem;
-  justify-content: center;
-
-  img{
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    z-index: -1;
-  }
-`;
-
 export const Nav = styled.nav`
+  margin-top: 2rem;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
 
-  width: 100%;
-  max-width: 62.5rem;
-  height: 2.8rem;
-  padding: 0rem 1rem;
+
 
   h1{
+    margin-left: 80px;
     font-size: 2rem;
     color: ${({ theme }) => theme.colors.main};
   }
-
-
   .navBar {
+
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -49,6 +34,7 @@ export const Nav = styled.nav`
     button{
       height: 2.8rem;
       width: 7.5rem;
+      margin-right: 80px;
       border: 2px solid #FFFF;
       background: #FFFF;
       border-radius: .5rem;
@@ -63,4 +49,31 @@ export const Nav = styled.nav`
       }
     }
   }
+
+  @media screen and (max-width: 820px)
+  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h1{
+      color: #FFFF;
+      margin: 0;
+    }
+    .navBar{
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      background:rgba(45, 53, 97, 0.8);
+      padding: 1rem;
+      border: none;
+      border-radius: 5px;
+
+      button{
+        margin: 0;
+        color: ${({ theme }) => theme.colors.title};
+      }
+    }
+  }
+
 `;
