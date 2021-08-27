@@ -9,7 +9,7 @@ export default function Home() {
         <Header />
         <Landing />
       </div>
-      <div id="scroll1" style={{ height: '100vh', background: 'red' }}>
+      <div id="scroll1" style={{ height: '100vh' }}>
         <Recipes />
       </div>
     </>

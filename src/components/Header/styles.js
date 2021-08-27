@@ -31,21 +31,29 @@ export const Nav = styled.nav`
 
     }
 
-    button{
+    .register{
       height: 2.8rem;
       width: 7.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-right: 80px;
       border: 2px solid #FFFF;
       background: #FFFF;
       border-radius: .5rem;
-      font-size: 1rem;
+      a{
+        font-size: 1rem;
       font-weight: 700;
       color: ${({ theme }) => theme.colors.main};
+      }
+
       transition: .2s ease;
       &:hover{
         background: transparent;
-        color: #FFFF;
-
+        cursor: pointer;
+        a{
+          color: #FFFF;
+        }
       }
     }
   }
@@ -61,19 +69,37 @@ export const Nav = styled.nav`
       margin: 0;
     }
     .navBar{
-      margin-top: 1rem;
+      margin-top: 2rem;
       display: flex;
       flex-direction: column;
-      background:rgba(45, 53, 97, 0.8);
+      background:rgba(45, 53, 97, 0.75);
+      backdrop-filter: blur(6px);
       padding: 1rem;
       border: none;
       border-radius: 5px;
 
-      button{
+      .register{
         margin: 0;
-        color: ${({ theme }) => theme.colors.title};
+        a{
+          color: ${({ theme }) => theme.colors.title};
+
+        }
       }
     }
   }
 
 `;
+
+// a{
+//   color: ${({ theme }) => theme.colors.primary.main};
+//   text-decoration: none;
+//   font-weight: bold;
+//   border: 2px solid ${({ theme }) => theme.colors.primary.main};
+//   padding: 8px 16px;
+//   border-radius: 4px;
+//   transition: all 0.2s ease-in;
+
+//   &:hover{
+//     background: ${({ theme }) => theme.colors.primary.main};
+//     color: #fff;
+//   }

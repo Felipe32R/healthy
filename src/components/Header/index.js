@@ -8,7 +8,7 @@ export default function Header() {
         <a href="scroll0">HEALTHY RECIPES</a>
         <a href="scroll1">BLOG</a>
         <a href="/">JOIN</a>
-        <div><button type="button">REGISTER</button></div>
+        <div className="register"><a href="/register">REGISTER</a></div>
       </div>
     </Nav>
 

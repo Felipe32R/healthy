@@ -1,5 +1,5 @@
 // import RecipeBlock from '../RecipeBlock';
-import { Container } from './styles';
+import { Container, RecipeBlocks } from './styles';
 
 export default function Recipes() {
   return (
@@ -16,6 +16,7 @@ export default function Recipes() {
             there live the blind texts.
           </small>
         </div>
+        <RecipeBlocks />
       </div>
     </Container>
   );

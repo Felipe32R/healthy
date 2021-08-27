@@ -17,6 +17,19 @@ export const Container = styled.div`
     justify-content: center;
     flex-direction: column;
 
+    @media screen and (max-width: 590px)
+  {
+      h1{
+        width: 10rem;
+        margin-bottom: 2rem;
+      }
+
+      .text{
+        width: 15rem;
+        padding-left: 2rem;
+      }
+  }
+
 h1{
 display: flex;
 margin-top: 2rem;
@@ -32,4 +45,11 @@ font-size: 2.2rem;
   }
   }
 }
+`;
+
+export const RecipeBlocks = styled.div`
+  width: 100%;
+  height: 100vh;
+  background: red;
+
 `;

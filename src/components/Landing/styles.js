@@ -15,7 +15,7 @@ export const Container = styled.div`
       height: 80%;
     }
   }
-  @media screen and (max-width: 990px)
+  @media screen and (max-width: 1020px)
   {
       #img1{
       height: 62%;
@@ -24,19 +24,19 @@ export const Container = styled.div`
   @media screen and (max-width: 820px)
   {
       #img1{
-      height: 60%;
+      height: 75%;
     }
   }
   @media screen and (max-width: 590px)
   {
       #img1{
-      height: 60%;
+      height: 70%;
     }
   }
   @media screen and (max-width: 460px)
   {
       #img1{
-      height: 50%;
+      height: 63%;
     }
   }
 `;
@@ -82,10 +82,10 @@ export const SearchBox = styled.div`
     }
   }
 
-  @media screen and (max-width:520px)
+  @media screen and (max-width:820px)
   {
     .title{
-      margin-right: 5rem;
+      margin-top: 18rem;
     }
   }
 
