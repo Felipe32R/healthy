@@ -24,25 +24,14 @@ export const Container = styled.div`
   @media screen and (max-width: 820px)
   {
       #img1{
-      height: 75%;
-    }
-  }
-  @media screen and (max-width: 590px)
-  {
-      #img1{
-      height: 70%;
-    }
-  }
-  @media screen and (max-width: 460px)
-  {
-      #img1{
-      height: 63%;
+      display: none;
+
     }
   }
 `;
 
 export const SearchBox = styled.div`
-  width: 100%;
+
   .title{
     width: 21.5rem;
     height: 15rem;
@@ -85,7 +74,7 @@ export const SearchBox = styled.div`
   @media screen and (max-width:820px)
   {
     .title{
-      margin-top: 18rem;
+      margin-left: 2rem;
     }
   }
 

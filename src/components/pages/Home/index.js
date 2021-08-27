@@ -1,17 +1,24 @@
 import Header from '../../Header';
 import Landing from '../../Landing';
 import Recipes from '../../Recipes';
+import Services from '../../Services';
+import { Scroll } from './styles';
 
 export default function Home() {
   return (
     <>
-      <div id="scroll0" style={{ height: '100vh' }}>
+      <Scroll>
         <Header />
         <Landing />
-      </div>
-      <div id="scroll1" style={{ height: '100vh' }}>
+      </Scroll>
+
+      <Scroll>
         <Recipes />
-      </div>
+      </Scroll>
+
+      <Scroll>
+        <Services />
+      </Scroll>
     </>
   );
 }

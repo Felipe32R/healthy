@@ -65,7 +65,6 @@ export const Nav = styled.nav`
     flex-direction: column;
 
     h1{
-      color: #FFFF;
       margin: 0;
     }
     .navBar{
