@@ -4,9 +4,20 @@ export const Container = styled.div`
 
   display: flex;
 
+  .container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+    p{
+      color: ${({ theme }) => theme.colors.text};
+    }
+  }
 
   #img2{
-    position: absolute;
+
     z-index: -1;
   }
 

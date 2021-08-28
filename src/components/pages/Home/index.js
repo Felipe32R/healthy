@@ -1,3 +1,4 @@
+import { Blog } from '../../Blog';
 import Header from '../../Header';
 import Landing from '../../Landing';
 import Recipes from '../../Recipes';
@@ -18,6 +19,10 @@ export default function Home() {
 
       <Scroll>
         <Services />
+      </Scroll>
+
+      <Scroll>
+        <Blog />
       </Scroll>
     </>
   );
