@@ -42,9 +42,15 @@ export const Nav = styled.nav`
       background: #FFFF;
       border-radius: .5rem;
       a{
+        padding-top: .7rem;
         font-size: 1rem;
-      font-weight: 700;
-      color: ${({ theme }) => theme.colors.main};
+        font-weight: 700;
+        color: ${({ theme }) => theme.colors.main};
+        text-align: center;
+        justify-items: center;
+        width: 100%;
+        height: 100%;
+
       }
 
       transition: .2s ease;

@@ -1,46 +1,48 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  display: flex;
 
-  #img1{
+  #img3{
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 0%;
     z-index: -1;
   }
 
   @media screen and (max-width: 1190px)
   {
-      #img1{
+      #img3{
       height: 80%;
     }
   }
   @media screen and (max-width: 1020px)
   {
-      #img1{
+      #img3{
       height: 62%;
     }
   }
   @media screen and (max-width: 820px)
   {
-      #img1{
+      #img3{
       display: none;
 
     }
   }
 `;
 
-export const SearchBox = styled.div`
+export const InputBox = styled.div`
+
+  margin-top: 15rem;
 
   .title{
     width: 21.5rem;
     height: 15rem;
-    margin-top: 12rem;
+
     margin-left: 5rem;
 
-    h1{
-      width: 18.75;
-      font-size: 3rem;
+    h3{
+      width: 25rem;
+      font-size: 2rem;
     }
 
     .search{
@@ -61,25 +63,7 @@ export const SearchBox = styled.div`
     input:focus{
       border: 2px solid ${({ theme }) => theme.colors.main};
     }
-    button{
-      height: 2.8rem;
-      width: 3rem;
-      border: none;
-      border-radius: .5rem;
-      background: ${({ theme }) => theme.colors.main};
-      transition: .2s ease;
-      
-      &:hover{
-      background: ${({ theme }) => theme.colors.hover};
-      }
-    }
-  }
 
-  @media screen and (max-width:820px)
-  {
-    .title{
-      margin-left: 2rem;
-    }
   }
 
 `;
