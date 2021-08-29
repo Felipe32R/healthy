@@ -6,6 +6,8 @@ export const Container = styled.div`
     justify-content: center;
     flex-direction: column;
 
+
+
     h1{
     display: flex;
     margin-top: 2rem;
@@ -40,6 +42,8 @@ export const Container = styled.div`
         padding-left: 2rem;
       }
   }
+
+
 
 `;
 

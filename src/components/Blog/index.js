@@ -1,4 +1,6 @@
-import { Container, ScrollContainer, ScrollRecipe } from './styles';
+import {
+  Container, TitleContainer, ScrollContainer, ScrollRecipe,
+} from './styles';
 
 import arrow from '../../assets/icons/arrow1.svg';
 
@@ -14,8 +16,8 @@ import nuts from '../../assets/images/recipes/nuts.svg';
 
 export function Blog() {
   return (
-    <>
-      <Container>
+    <Container>
+      <TitleContainer>
         <h1>Read Our Blog</h1>
         <div className="text">
           <small>
@@ -29,7 +31,7 @@ export function Blog() {
           </small>
         </div>
 
-      </Container>
+      </TitleContainer>
 
       <ScrollContainer>
         <button type="button">
@@ -100,6 +102,6 @@ export function Blog() {
         </ScrollRecipe>
 
       </ScrollContainer>
-    </>
+    </Container>
   );
 }

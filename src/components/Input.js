@@ -7,7 +7,7 @@ export default styled.input`
   box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.4);
   height: 52px;
   border-radius: 4px;
-  margin-top: 1rem;
+
   outline: none;
   padding: 0 16px;
   font-size: 16px;

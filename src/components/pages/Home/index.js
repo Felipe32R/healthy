@@ -11,16 +11,22 @@ export default function Home() {
   return (
     <>
       <Scroll>
-        <Header />
-        <Landing />
+        <div className="landing">
+          <Header />
+          <Landing />
+        </div>
       </Scroll>
 
       <Scroll>
-        <Recipes />
+        <div className="recipes">
+          <Recipes />
+        </div>
       </Scroll>
 
       <Scroll>
-        <Services />
+        <div className="services">
+          <Services />
+        </div>
       </Scroll>
 
       <Scroll>
@@ -30,7 +36,9 @@ export default function Home() {
       </Scroll>
 
       <Scroll>
-        <Final />
+        <div className="final">
+          <Final />
+        </div>
       </Scroll>
       <Footer />
     </>

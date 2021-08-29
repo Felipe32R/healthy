@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  height: 100%;
+  width: 100%;
+
+`;
+export const TitleContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,6 +63,7 @@ export const ScrollContainer = styled.div`
     right: 0;
     margin-right: 2rem;
     position: absolute;
+    box-shadow: 5px 5px 20px ${({ theme }) => theme.colors.main};
     width: 3rem;
     height: 3rem;
     border: 2px solid ${({ theme }) => theme.colors.main};
@@ -75,6 +81,28 @@ export const ScrollContainer = styled.div`
     }
   }
 
+  @media screen and (max-width: 800px)
+    {
+      padding-left: 5rem;
+    }
+  @media screen and (max-width: 740px)
+  {
+      padding-left: 10rem;
+  }
+  @media screen and (max-width: 690px)
+  {
+      padding-left: 15rem;
+  }
+  @media screen and (max-width: 590px)
+  {
+      padding-left: 20rem;
+  }
+  @media screen and (max-width: 480px)
+  {
+      padding-left: 25rem;
+  }
+
+
 `;
 
 export const ScrollRecipe = styled.div`
@@ -86,11 +114,11 @@ export const ScrollRecipe = styled.div`
   box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.4);
 
 
-
-
   .recipe{
     width: 18.45rem;
     height: 12.5rem;
+
+
 
   }
   .description{
@@ -110,5 +138,6 @@ export const ScrollRecipe = styled.div`
     }
   }
 }
+
 
 `;

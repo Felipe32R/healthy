@@ -9,11 +9,14 @@ export const Container = styled.div`
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
+    margin-right: 2rem;
     gap: 2rem;
 
     p{
       color: ${({ theme }) => theme.colors.text};
     }
+
+
   }
 
   #img2{
@@ -23,7 +26,14 @@ export const Container = styled.div`
 
   @media screen and (max-width: 960px)
   {
-    margin-top: 30rem;
+    justify-content: center;
+    align-items: center;
+    height: 160%;
+    #img2{
+      display: none;
+    }
+
+
   }
 
   @media screen and (max-width: 1190px)
@@ -38,13 +48,7 @@ export const Container = styled.div`
       height: 62%;
     }
   }
-  @media screen and (max-width: 800px)
-  {
-      #img2{
-      display: none;
 
-    }
-  }
 
 
 `;

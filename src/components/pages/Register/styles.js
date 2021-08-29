@@ -1,23 +1,27 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
- display: flex;
+export const Form = styled.form`
+  display: flex;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: auto;
   max-width: 500px;
   margin: 0 auto;
   padding: 0 16px;
   justify-content: center;
   flex-direction: column;
 
+
   h1{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
   }
   `;
 
 export const ButtonsContainer = styled.div`
+  width: 100%;
   margin-top: 2rem;
+  margin-bottom: 5rem;
   display: flex;
   gap: .5rem;
   align-items: center;
@@ -32,6 +36,14 @@ export const ButtonsContainer = styled.div`
   color: #FFFF;
   font-weight: 600;
   transition: .2s ease;
+
+  &:disabled {
+    background: ${({ theme }) => theme.colors.text};
+    cursor: default;
+    &:hover{
+    background: ${({ theme }) => theme.colors.text};
+  }
+  }
 
   &:hover{
     background: ${({ theme }) => theme.colors.hover};

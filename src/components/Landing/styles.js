@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-
+    margin-bottom: 2rem;
   #img1{
     position: absolute;
     right: 0px;
@@ -68,7 +68,7 @@ export const SearchBox = styled.div`
       border-radius: .5rem;
       background: ${({ theme }) => theme.colors.main};
       transition: .2s ease;
-      
+
       &:hover{
       background: ${({ theme }) => theme.colors.hover};
       }
