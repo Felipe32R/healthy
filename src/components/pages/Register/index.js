@@ -134,12 +134,15 @@ export default function Register() {
 
   const isFormValid = (name, birth, cep, cpf && errors.length === 0);
 
-  console.log(errors);
   function handleSubmit(event) {
     event.preventDefault();
-    console.log({
-      name, birth, cep, cpf,
-    });
+    localStorage.setItem('name', name);
+    localStorage.setItem('birth', birth);
+    localStorage.setItem('cep', cep);
+    localStorage.setItem('cpf', cpf);
+    localStorage.setItem('state', state);
+    localStorage.setItem('city', city);
+    localStorage.setItem('neighborhood', neighborhood);
   }
 
   return (
@@ -232,7 +235,14 @@ export default function Register() {
         <button type="button">
           <Link to="/">Cancel</Link>
         </button>
-        <button type="submit" disabled={!isFormValid}>Register</button>
+        <button
+          type="submit"
+          disabled={!isFormValid}
+
+        >
+          Register
+
+        </button>
 
       </ButtonsContainer>
     </Form>

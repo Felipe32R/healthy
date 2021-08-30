@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-
   display: flex;
 
   .container{
@@ -9,14 +8,12 @@ export const Container = styled.div`
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    margin-right: 2rem;
+
     gap: 2rem;
 
     p{
       color: ${({ theme }) => theme.colors.text};
     }
-
-
   }
 
   #img2{
@@ -26,13 +23,19 @@ export const Container = styled.div`
 
   @media screen and (max-width: 960px)
   {
-    justify-content: center;
+    display: flex;
     align-items: center;
-    height: 160%;
+    text-align: center;
+    justify-content: center;
+    padding: 0 16px 0 16px;
+    margin-top: 50%;
+    h2, p, button{
+      width: 100%;
+      align-items: center;
+    }
     #img2{
       display: none;
     }
-
 
   }
 

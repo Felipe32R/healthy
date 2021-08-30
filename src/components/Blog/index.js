@@ -5,14 +5,14 @@ import {
 import arrow from '../../assets/icons/arrow1.svg';
 
 import kevin from '../../assets/images/chiefs/kevin.png';
-// import mike from '../../assets/images/chiefs/mike.png';
-// import bryan from '../../assets/images/chiefs/bryan.png';
-// import luca from '../../assets/images/chiefs/luca.png';
+import mike from '../../assets/images/chiefs/mike.png';
+import bryan from '../../assets/images/chiefs/bryan.png';
+import luca from '../../assets/images/chiefs/luca.png';
 
 import nuts from '../../assets/images/recipes/nuts.svg';
-// import water from '../../assets/images/recipes/water.svg';
-// import grapes from '../../assets/images/recipes/grapes.svg';
-// import angryplate from '../../assets/images/recipes/angryplate.svg';
+import water from '../../assets/images/recipes/water.svg';
+import grapes from '../../assets/images/recipes/grapes.svg';
+import angryplate from '../../assets/images/recipes/angryplate.svg';
 
 export function Blog() {
   return (
@@ -54,49 +54,49 @@ export function Blog() {
         </ScrollRecipe>
 
         <ScrollRecipe>
-          <img src={nuts} alt="Recipe1" className="recipe" />
+          <img src={water} alt="Recipe1" className="recipe" />
           <div className="description">
             <h3>
-              Quick-start guide
+              Nutrition: Tips for
               {' '}
               <br />
-              to nuts and seeds
+              improving your health
             </h3>
             <div>
-              <img src={kevin} alt="Chief1" />
-              <p>Kevin Ibrahim</p>
+              <img src={mike} alt="Chief1" />
+              <p>Mike Jackson</p>
             </div>
           </div>
         </ScrollRecipe>
 
         <ScrollRecipe>
-          <img src={nuts} alt="Recipe1" className="recipe" />
+          <img src={grapes} alt="Recipe1" className="recipe" />
           <div className="description">
             <h3>
-              Quick-start guide
+              The top 10 benefits
               {' '}
               <br />
-              to nuts and seeds
+              of eating heathy
             </h3>
             <div>
-              <img src={kevin} alt="Chief1" />
-              <p>Kevin Ibrahim</p>
+              <img src={bryan} alt="Chief1" />
+              <p>Bryan McGregor</p>
             </div>
           </div>
         </ScrollRecipe>
 
         <ScrollRecipe>
-          <img src={nuts} alt="Recipe1" className="recipe" />
+          <img src={angryplate} alt="Recipe1" className="recipe" />
           <div className="description">
             <h3>
-              Quick-start guide
+              What to know about
               {' '}
               <br />
-              to nuts and seeds
+              Healthy behaviors
             </h3>
             <div>
-              <img src={kevin} alt="Chief1" />
-              <p>Kevin Ibrahim</p>
+              <img src={luca} alt="Chief1" />
+              <p>Luca Mòdric</p>
             </div>
           </div>
         </ScrollRecipe>

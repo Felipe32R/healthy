@@ -6,8 +6,6 @@ export const Container = styled.div`
     justify-content: center;
     flex-direction: column;
 
-
-
     h1{
     display: flex;
     margin-top: 2rem;
@@ -84,26 +82,52 @@ export const RecipeBlocks = styled.div`
 
   @media screen and (max-width: 960px)
   {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    .block{
+    width: 22rem;
+    margin: 1rem 1rem 0 0;
+    height: 12rem;
+
+    img{
+      height: 12rem;
+      width: 90%;
+    }
+
+    .description{
+     h3{
+       text-align: center;
+     }
+    }
+  }
 
   }
 
-  @media screen and (max-width: 550px)
+  @media screen and (max-width: 830px)
   {
+    display: flex;
+    margin-top: -2px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    height: 100%;
       .block{
-        width: 16rem;
-        height: 20rem;
-        display: flex;
+        width: 14rem;
+        height: 6rem;
 
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        img{
+          height: 100%;
+          width: 100%;
 
-        h3{
-          margin-top: 1rem;
+        }
+        .description{
+          padding-top: 2.6rem;
+          width: 50%;
+          height: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 75%;
+
         }
       }
   }

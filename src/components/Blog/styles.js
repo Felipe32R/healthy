@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 100%;
-  width: 100%;
+
 
 `;
 export const TitleContainer = styled.div`
     display: flex;
+
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -96,6 +96,7 @@ export const ScrollContainer = styled.div`
   @media screen and (max-width: 590px)
   {
       padding-left: 20rem;
+      margin-bottom:2rem;
   }
   @media screen and (max-width: 480px)
   {

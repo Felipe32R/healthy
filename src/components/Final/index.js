@@ -9,22 +9,20 @@ export default function Final() {
       <img src={finalImg} alt="Final" id="img3" />
 
       <InputBox>
-        <div className="title">
-          <h3>
-            Join our membership
-            {' '}
-            <br />
-            to get a special offer
-          </h3>
+        <h2>
+          Join our membership
+          {' '}
+          <br />
+          to get a special offer
+        </h2>
 
-          <div className="search">
-            <input
-              type="text"
-              placeholder="Enter your
+        <div className="email">
+          <input
+            type="text"
+            placeholder="Enter your
             email address"
-            />
-            <Button>Join</Button>
-          </div>
+          />
+          <Button>Join</Button>
         </div>
       </InputBox>
     </Container>

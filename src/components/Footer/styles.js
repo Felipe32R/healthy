@@ -26,6 +26,13 @@ width: 100%;
     }
     gap: 1rem;
   }
+
+  @media screen and (max-width: 960px)
+  {
+     width: 100%;
+     gap: 2rem;
+     margin: 0 2rem 0 2rem;
+  }
 }
 
 
