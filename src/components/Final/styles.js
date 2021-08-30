@@ -54,15 +54,18 @@ export const InputBox = styled.div`
     padding-top: 1.5rem;
 
     input{
-      height: 2.5rem;
+      height: 2.8rem;
       width: 17.5rem;
       outline: none;
       border: 1px solid ${({ theme }) => theme.colors.text};
       border-radius: .5rem;
       padding: 0 16px;
     }
+    input:focus{
+      border: 2px solid ${({ theme }) => theme.colors.main};
+    }
     button{
-      height: 2.5rem;
+      height: 2.8rem;
       width: 4.5rem;
     }
   }

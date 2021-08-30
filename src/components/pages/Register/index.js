@@ -16,8 +16,9 @@ export default function Register() {
   const [city, setCity] = useState('City');
   const [neighborhood, setNeighborhood] = useState('Neighborhood');
   const [street, setStreet] = useState('Street');
-
   const [errors, setErrors] = useState([]);
+  const [registered, setRegistered] = useState(false);
+  const isFormValid = (name, birth, cep, cpf && errors.length === 0);
 
   function handleNameChange(event) {
     setName(event.target.value);
@@ -132,8 +133,6 @@ export default function Register() {
     return errors.find((error) => error.field === fieldName)?.message;
   }
 
-  const isFormValid = (name, birth, cep, cpf && errors.length === 0);
-
   function handleSubmit(event) {
     event.preventDefault();
     localStorage.setItem('name', name);
@@ -143,6 +142,9 @@ export default function Register() {
     localStorage.setItem('state', state);
     localStorage.setItem('city', city);
     localStorage.setItem('neighborhood', neighborhood);
+
+    alert(`User ${name} registered.`);
+    setRegistered(true);
   }
 
   return (
@@ -232,16 +234,27 @@ export default function Register() {
       </FormGroup>
 
       <ButtonsContainer>
-        <button type="button">
+        <button
+          type="button"
+          style={registered ? { display: 'none' } : { display: 'block' }}
+        >
           <Link to="/">Cancel</Link>
         </button>
         <button
-          type="submit"
-          disabled={!isFormValid}
+          type="button"
+          style={registered ? { display: 'block' } : { display: 'none' }}
+        >
+          <Link to="/">
+            ⬅ Back
+          </Link>
 
+        </button>
+        <button
+          type="submit"
+          disabled={!isFormValid || registered}
+          onClick={handleSubmit}
         >
           Register
-
         </button>
 
       </ButtonsContainer>

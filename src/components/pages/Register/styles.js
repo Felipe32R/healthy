@@ -26,6 +26,12 @@ export const ButtonsContainer = styled.div`
   gap: .5rem;
   align-items: center;
   justify-content: space-between;
+  a{
+
+      padding: 10px 30px;
+      text-decoration: none;
+      color: #FFF;
+  }
 
   button{
   width: 100%;
@@ -36,6 +42,7 @@ export const ButtonsContainer = styled.div`
   color: #FFFF;
   font-weight: 600;
   transition: .2s ease;
+
 
   &:disabled {
     background: ${({ theme }) => theme.colors.text};
@@ -54,18 +61,13 @@ export const ButtonsContainer = styled.div`
     background: gray;
     transition: .2s ease;
     display: flex;
-    a{
-      width: 100%;
-      height: 100%;
-      padding-top: .7rem;
-      text-decoration: none;
-      color: #FFF;
-    }
+
 
     &:hover{
       background: ${({ theme }) => theme.colors.darkText};
     }
   }
+
 
 
 `;

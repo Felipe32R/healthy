@@ -4,20 +4,20 @@ export const Scroll = styled.div`
   height: 100vh;
 
 
-  .recipes{
+  #recipes{
     margin-top: 5rem;
     height: 100%;
     width: 100%;
   }
 
-  .services{
+  #services{
     height: 100%;
     width: 100%;
     align-items: center;
 
   }
 
-  .blog{
+  #blog{
     overflow-x:hidden;
     height: 100%;
     width: 100%;
@@ -27,7 +27,7 @@ export const Scroll = styled.div`
 
   }
 
-  .final{
+  #final{
 
   }
 `;
