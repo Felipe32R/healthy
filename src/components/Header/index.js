@@ -7,9 +7,9 @@ export default function Header() {
     <Nav>
       <h1>Healthy Food</h1>
       <div className="navBar">
-        <a href="/">HEALTHY RECIPES</a>
-        <a href="/">BLOG</a>
-        <a href="/">JOIN</a>
+        <a href="#recipes">HEALTHY RECIPES</a>
+        <a href="#blog">BLOG</a>
+        <a href="#final">JOIN</a>
         <div className="register"><Link to="/register">REGISTER</Link></div>
       </div>
     </Nav>
